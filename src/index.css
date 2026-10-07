@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif-bn: "Noto Serif Bengali", serif;
+  --font-sans-bn: "Noto Sans Bengali", sans-serif;
+  --font-display-en: "Cormorant Garamond", serif;
+
+  --color-emerald-deep: #0B3D35;
+  --color-forest-dark: #123C35;
+  --color-gold-accent: #C8A96B;
+  --color-gold-light: #E0C792;
+  --color-ivory-bg: #FAF8F2;
+  --color-charcoal-text: #1F2926;
+}
+
+body {
+  font-family: "Noto Sans Bengali", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1F2926;
+  background-color: #FAF8F2;
+}
+
+h1, h2, h3, .font-serif-bengali {
+  font-family: "Noto Serif Bengali", serif;
+}
+
+.font-english-display {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Subtle Islamic geometric pattern using pure lightweight SVG math */
+.islamic-pattern-dark {
+  background-color: #0B3D35;
+  background-image: radial-gradient(circle at 50% 50%, rgba(200, 169, 107, 0.08) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23C8A96B' stroke-width='0.6' stroke-opacity='0.12'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3Cpath d='M30 10l20 20-20 20-20-20z'/%3E%3Ccircle cx='30' cy='30' r='5'/%3E%3Cpath d='M0 0l15 15M60 0l-15 15M0 60l15-15M60 60l-15-15'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.islamic-pattern-light {
+  background-color: #FAF8F2;
+  background-image: radial-gradient(circle at 50% 0%, rgba(11, 61, 53, 0.03) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%230B3D35' stroke-width='0.4' stroke-opacity='0.05'%3E%3Cpolygon points='40,0 80,40 40,80 0,40'/%3E%3Cpolygon points='40,15 65,40 40,65 15,40'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Subtle gold hairline borders and luxury accents */
+.gold-hairline-border {
+  border: 1px solid rgba(200, 169, 107, 0.28);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F3E5C8 0%, #C8A96B 50%, #D8BE85 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
